@@ -26,7 +26,7 @@ jobs:
         run: $TEST_DIR/validate-student.sh
         shell: bash
   build:
-    needs: [content, author, branch]
+    needs: [author, branch]
     runs-on: ubuntu-latest
     container:
       image: volgarenok/cxx-test:latest
